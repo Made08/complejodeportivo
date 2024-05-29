@@ -1,11 +1,16 @@
 package co.madelem.complejo;
 
-import co.madelem.complejo.dominio.*;
-import co.madelem.complejo.patrones.*;
+import co.madelem.complejo.dominio.Cliente;
+import co.madelem.complejo.dominio.Cancha;
+import co.madelem.complejo.dominio.Reserva;
+import co.madelem.complejo.dominio.Pago;
+
+import co.madelem.complejo.patrones.CanchaFactory;
+import co.madelem.complejo.patrones.GestionReservas;
 
 import java.time.LocalDateTime;
 
-public class Main {
+public class Aplicacion {
     public static void main(String[] args) {
         // Creación de Canchas, patron factory 
         Cancha cancha1 = CanchaFactory.crearCancha("Futbol Sala", 1, "Cancha 1", 50.0);
@@ -13,12 +18,12 @@ public class Main {
 
         // Creación de Clientes
         Cliente cliente1 = new Cliente(1, "Juan Caicedo", "juancaidedo@gmail.com");
-        Cliente cliente1 = new Cliente(2, "Madelem", "madelenchicovelasco@gmail.com");
+        Cliente cliente2 = new Cliente(2, "Madelem", "madelenchicovelasco@gmail.com");
 
         // Creación de Reservas
         Reserva reserva1 = new Reserva(1, cliente1, cancha1, LocalDateTime.of(2024, 6, 1, 18, 0), 2.0);
         Reserva reserva2 = new Reserva(2, cliente1, cancha2, LocalDateTime.of(2024, 6, 2, 20, 0), 1.5);
-        Reserva reserva2 = new Reserva(3, cliente2, cancha1, LocalDateTime.of(2024, 6, 2, 22, 0), 1.5);
+        Reserva reserva3 = new Reserva(3, cliente2, cancha1, LocalDateTime.of(2024, 6, 2, 22, 0), 1.5);
 
         // Gestión de Reservas, patron singleton
         GestionReservas gestionReservas = GestionReservas.getInstancia(); 

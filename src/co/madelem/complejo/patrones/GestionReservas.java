@@ -1,11 +1,11 @@
 package co.madelem.complejo.patrones;
 
-import co.madelem.complejo.dominio;
+import co.madelem.complejo.dominio.Reserva;
 
 import java.util.ArrayList;
 import java.util.List;
 
-class GestionReservas {
+public class GestionReservas {
     private static GestionReservas instancia;
     private List<Reserva> reservas;
 

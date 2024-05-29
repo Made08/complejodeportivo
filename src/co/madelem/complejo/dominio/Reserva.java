@@ -2,7 +2,7 @@ package co.madelem.complejo.dominio;
 
 import java.time.LocalDateTime;
 
-class Reserva {
+public class Reserva {
     private int id;
     private Cliente cliente;
     private Cancha cancha;

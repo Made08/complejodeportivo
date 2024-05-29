@@ -1,6 +1,6 @@
 package co.madelem.complejo.dominio;
 
-abstract class Cancha {
+public abstract class Cancha {
     protected int id;
     protected String nombre;
     protected double precio;
@@ -15,7 +15,7 @@ abstract class Cancha {
     public abstract String getDetalles();
 }
 
-class CanchaFutbolSala extends Cancha {
+public class CanchaFutbolSala extends Cancha {
     public CanchaFutbolSala(int id, String nombre, double precio) {
         super(id, nombre, precio);
     }
@@ -26,7 +26,7 @@ class CanchaFutbolSala extends Cancha {
     }
 }
 
-class CanchaFutbol11 extends Cancha {
+public class CanchaFutbol11 extends Cancha {
     public CanchaFutbol11(int id, String nombre, double precio) {
         super(id, nombre, precio);
     }
@@ -37,7 +37,7 @@ class CanchaFutbol11 extends Cancha {
     }
 }
 
-class CanchaFutbol7 extends Cancha {
+public class CanchaFutbol7 extends Cancha {
     public CanchaFutbol7(int id, String nombre, double precio) {
         super(id, nombre, precio);
     }

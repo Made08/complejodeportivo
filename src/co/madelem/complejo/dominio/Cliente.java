@@ -1,6 +1,6 @@
 package co.madelem.complejo.dominio;
 
-class Cliente {
+public class Cliente {
     private int id;
     private String nombre;
     private String email;
