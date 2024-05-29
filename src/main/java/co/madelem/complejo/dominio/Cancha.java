@@ -10,6 +10,8 @@ public abstract class Cancha {
         this.id = id;
         this.nombre = nombre;
         this.precio = precio;
+        this.estadoDisponible = true;
+        System.out.println("\n"+getDetalles());
     }
 
     public abstract String getDetalles();

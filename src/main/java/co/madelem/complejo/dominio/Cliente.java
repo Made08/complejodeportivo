@@ -6,10 +6,16 @@ public class Cliente {
     private String email;
     private String celular;
 
+    @Override
+    public String toString() {
+        return "Cliente [id=" + id + ", nombre=" + nombre + ", email=" + email + ", celular=" + celular + "]";
+    }
+
     public Cliente(int id, String nombre, String email) {
         this.id = id;
         this.nombre = nombre;
         this.email = email;
+        System.out.println("\n"+this);
     }
 
     public int getId() {
