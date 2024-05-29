@@ -1,9 +1,7 @@
 package co.madelem.complejo.patrones;
 
-import co.madelem.complejo.dominio.Cancha;
-import co.madelem.complejo.dominio.CanchaFutbolSala;
-import co.madelem.complejo.dominio.CanchaFutbol11;
-import co.madelem.complejo.dominio.CanchaFutbol7;
+import co.madelem.complejo.dominio.*;
+
 
 public class CanchaFactory {
     public static Cancha crearCancha(String tipo, int id, String nombre, double precio) {

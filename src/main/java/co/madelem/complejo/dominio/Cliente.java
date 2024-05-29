@@ -20,7 +20,7 @@ public class Cliente {
         return nombre;
     }
 
-    public setNombre(String nombre) {
+    public void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
@@ -28,7 +28,7 @@ public class Cliente {
         return celular;
     }
 
-    public setCelular(String celular) {
+    public void setCelular(String celular) {
         this.celular = celular;
     }
 
@@ -36,7 +36,7 @@ public class Cliente {
         return email;
     }
 
-    public setEmail(String email) {
+    public void setEmail(String email) {
         this.email = email;
     }
 }
