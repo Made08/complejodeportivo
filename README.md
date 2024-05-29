@@ -1,6 +1,6 @@
 # 📝 Validacion Patrones de Diseño, UCC 2024
 
-## Complejo Deportivo: Sistemas de reserva de canchas 
+## Caso 1: Complejo Deportivo, Sistemas para reservas de canchas de futbol
 
 ### Requerimientos Minimos:
 1. Java JDK 1.8
